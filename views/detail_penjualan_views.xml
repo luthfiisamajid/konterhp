@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    
+    <!-- konterhp.detail_penjualan tree view -->
+    <record id="konterhp_detail_penjualan_view_tree" model="ir.ui.view">
+        <field name="name">Detail Penjualan</field>
+        <field name="model">konterhp.detail_penjualan</field>
+        <field name="arch" type="xml">
+            <tree>
+                <!-- Add your fields here -->
+                <field name="name"/>
+                <field name="jumlah_beli"/>
+                <field name="jumlah_harga"/>
+                <field name="detailhp_id"/>
+                <field name="hargahp"/>
+                <field name="detpenjualan_ids"/>
+            </tree>
+        </field>
+    </record>
+
+
+
+    <!-- konterhp.detail_penjualan form view -->
+    <record id="konterhp_detail_penjualan_view_form" model="ir.ui.view">
+        <field name="name">Input Detail Penjualan</field>
+        <field name="model">konterhp.detail_penjualan</field>
+        <field name="arch" type="xml">
+            <form string="">
+                <sheet>
+                    <group>
+                        <!-- Add your fields here -->
+                        <field name="name"/>
+                        <field name="jumlah_beli"/>
+                        <field name="jumlah_harga"/>
+                    </group>
+                    <group>
+                        <field name="detailhp_id"/>
+                        <field name="hargahp"/>
+                        <field name="detpenjualan_ids"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+    <!-- konterhp.detail_penjualan action window -->
+    <record id="konterhp_detail_penjualan_action" model="ir.actions.act_window">
+        <field name="name">Detail Penjualan</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">konterhp.detail_penjualan</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+
+    <!-- This Menu Item must have a parent and an action -->
+    <menuitem id="konterhp_detail_penjualan_menu_act" 
+              name="Detail Penjualan" 
+              parent="konterhp_penjualan_menu_categ" 
+              action="konterhp_detail_penjualan_action" 
+              sequence="20"/>
+
+</odoo>

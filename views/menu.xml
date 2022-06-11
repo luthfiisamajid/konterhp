@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- This Menu Item will appear in the Upper bar, that's why It needs NO parent or action -->
+    <menuitem id="konterhp_menu_root" 
+              name="KONTERHP" 
+              sequence="10"/>
+
+    <!-- This Menu Item Must have a parent -->
+    <menuitem id="konterhp_supply_menu_categ" 
+              name="SUPPLY" 
+              parent="konterhp_menu_root" 
+              sequence="20"/>
+
+    <!-- This Menu Item Must have a parent -->
+    <menuitem id="konterhp_pegawai_menu_categ" 
+              name="PEGAWAI" 
+              parent="konterhp_menu_root" 
+              sequence="30"/>
+
+
+    <!-- This Menu Item Must have a parent -->
+    <menuitem id="konterhp_customer_menu_categ" 
+              name="CUSTOMER" 
+              parent="konterhp_menu_root" 
+              sequence="40"/>  
+
+    <!-- This Menu Item Must have a parent -->
+    <menuitem id="konterhp_penjualan_menu_categ" 
+              name="PENJUALAN" 
+              parent="konterhp_menu_root" 
+              sequence="50"/>                  
+
+
+</odoo>

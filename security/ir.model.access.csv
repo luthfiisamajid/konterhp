@@ -1,0 +1,8 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_konterhp_supplier,access.konterhp_supplier,model_konterhp_supplier,,1,1,1,1
+access_konterhp_barang,access.konterhp_barang,model_konterhp_barang,,1,1,1,1
+access_konterhp_jenis,access.konterhp_jenis,model_konterhp_jenis,,1,1,1,1
+access_konterhp_pegawai,access.konterhp_pegawai,model_konterhp_pegawai,,1,1,1,1
+access_konterhp_customer,access.konterhp_customer,model_konterhp_customer,,1,1,1,1
+access_konterhp_detail_penjualan,access.konterhp_detail_penjualan,model_konterhp_detail_penjualan,,1,1,1,1
+access_konterhp_penjualan,access.konterhp_penjualan,model_konterhp_penjualan,,1,1,1,1
